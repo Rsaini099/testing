@@ -7,7 +7,7 @@ if(isset($_POST['search']))
     // using concat mysql function
     $query = "SELECT * FROM `users` WHERE CONCAT(`id`, `fname`, `lname`, `age`) LIKE '%".$valueToSearch."%'";
     $search_result = filterTable($query);
-    
+    // hun id sha ko hai
 }
  else {
     $query = "SELECT * FROM `users`";
